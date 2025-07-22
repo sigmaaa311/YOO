@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BloxToolz Extension</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      padding: 2rem;
+      max-width: 800px;
+      width: 100%;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      color: #cccccc;
+      text-align: center;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+      margin-bottom: 1.5rem;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    a.github-btn {
+      display: inline-block;
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 0.8rem 1.6rem;
+      font-size: 1rem;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    a.github-btn:hover {
+      background: linear-gradient(90deg, #2575fc, #6a11cb);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🔥 BloxToolz Extension</h1>
+    <p>A smooth and powerful Chrome extension to style your Roblox profile locally with fake values and animations.</p>
+
+    <!-- YouTube Embed -->
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/HaEiiCIs64g" allowfullscreen></iframe>
+    </div>
+
+    <!-- GitHub Button -->
+    <div style="text-align: center;">
+      <a href="https://github.com/sigmaaa311/bloxtoolz" target="_blank" class="github-btn">
+        🌐 View on GitHub
+      </a>
+    </div>
+  </div>
+</body>
+</html>
